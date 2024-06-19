@@ -1,0 +1,294 @@
+  <!DOCTYPE html> 
+  <html lang="en"> 
+  <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Your Website Title</title> <style> 
+  /* Resetting default margin and padding */ 
+  * { 
+		margin: 0; 
+		padding: 0; 
+		box-sizing: 
+		border-box; 
+	}
+/* Body styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #A78C7A;/*Latte*/
+        color: #333;
+        height: 100vh; /* Set viewport height to 100% */
+        overflow-y: auto; /* Allow vertical scrolling */
+    }
+
+    /* Header styling */
+    header {
+        background-color: #958B6;/*Taupe*/
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        grid-area: header; /* Grid placement */
+		
+    }
+
+    .brand img {
+        max-width: 100px;
+        vertical-align: middle;
+    }
+
+    .brand h1 {
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    /* Navigation styling */
+    nav {
+        background-color:#E8E3DB;/*Cream*/
+        padding: 10px;
+        overflow-x: auto;
+        grid-area: nav; /* Grid placement */
+    }
+
+    nav ul {
+        list-style-type: none;
+        white-space: nowrap; 
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px; 
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #926A4F;/*Fawn*/
+        font-weight: bold; 
+    }
+
+    /* Main content styling */
+    main {
+        padding: 20px;
+        grid-area: content; /* Grid placement */
+    }
+
+    section {
+        background-color: #C5B4A8;/*Oat*/
+        padding: 20px;
+        margin-bottom: 20px; 
+    }
+
+    section h2 {
+        margin-bottom: 10px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer styling */
+    footer 
+	{
+		background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        grid-area: footer; /* Grid placement */
+    }
+
+    /* Grid Layout */
+    .container {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-areas: 
+            "header header header"
+            "nav nav nav"
+            "left content right"
+            "footer footer footer";
+    }
+
+    #left, #right {
+        background-color: #696357;/*Dusty Office*/
+        padding: 20px;
+    }
+
+    #left ul, #right ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #left li, #right li {
+        margin-bottom: 10px;
+    }
+
+    #left { grid-area: left; } 
+    #right { grid-area: right; } 
+	
+	#left .image-box, #right .image-box 
+	{
+		width: 100%; /* Adjust width as needed */
+		height: auto;
+		overflow: hidden; /* To prevent image overflow */
+		margin-bottom: 20px; /* Add spacing below the box */
+	}
+
+	#left img, #right img 
+	{
+		width: 100%;
+		height: auto;
+		object-fit: cover; /* Ensures image fills the box while maintaining aspect ratio */
+	}
+	
+	{
+		text-decoration: none:
+		font-family: italic;
+		color: black;
+	}
+	
+	a:hover
+	{
+		text-decoration:bold;
+		font-size: 1.2em;
+		color: #E8E3DB;/*Dusty Office*/
+	}
+	
+	a:visited 
+	{
+        text-transform: lowercase;
+    }
+	
+	.brand img {
+        max-width: 100px;
+        vertical-align: middle;
+        cursor: pointer; 
+        transition: transform 0.3s ease; 
+    }
+
+    .brand img:hover {
+        transform: translateX(50px); 
+    }
+	
+	.dark
+	{
+		family-font: arial;
+		font-weight:bold;
+	}
+	
+	
+</style>
+</head> 
+<body> 
+<audio autoplay muted> <source src="Sound.mp3" type="audio/mp3"> 
+</audio> 
+<header> 
+<div class="brand"> <img src="Motor2.png" alt="Brand Logo" onclick="playAudio()" >
+ <h1>C<sup>paiz</sup></h1> </div> </header> <nav> <ul> 
+ <li><a href="#about">About</a></li> 
+ <li><a href="#portfolio">Portfolio</a></li> 
+ <li><a href="#blog">Blog</a></li> 
+ <li><a href="#contact">Contact</a></li> 
+ <li><a href="#social">Social Media</a></li> 
+ </ul> </nav>  
+ <div class="container"> 
+ <div id="left"> 
+ <h2 style = " text-align: center;">&#128507;</h2> 
+ <div class="image-box">
+        <img src="raya.jpg" alt="Image for Left Sidebar">
+    </div>
+	
+ <ul> 
+ <li><a href ="https://www.youtube.com/watch?v=xvFZjo5PgG0">Click Here</li> 
+ <li><a href ="https://www.youtube.com/watch?v=xvFZjo5PgG0">My other hobby</a></li> 
+ <li><a href ="https://www.youtube.com/watch?v=xvFZjo5PgG0">My experienced</a></li> 
+ </ul> 
+ </div> 
+ <main> 
+ <section id="about"> <div style="display: flex; align-items: left;"> 
+ <div style="flex: 1;"> <h2>Learn About Me</h2> <br><br> 
+ <p>Name: AHMAD FAIZ BIN ALLAUDDIN</p>
+ <p>Matrics: A22EC0132</p> 
+ <p>Hobby:Reading, workout, riding and sleeping</p> 
+ <p>Age: 21</p> 
+ 
+ </div> <div style="flex: 1;"> 
+ <img src="A1.jpg" alt="Profile Picture" style="max-width: 100%; float: right;"> 
+ </div> </div> </section> <section id="portfolio"> <h2>Random Pic</h2> 
+ 
+ <div class="gallery"> 
+ <img src="Tele.jpg" alt="Project 1"> 
+ <img src="p2.jpg" alt="Project 2"> 
+ </div> 
+ </section> <section id="blog"> <h2></h2> 
+ <p style = "font-family:cursive; ">
+ Once upon a time, there was a boy named Jack who had been facing shaming and body shaming his entire life. 
+ He was never good enough in the eyes of others, 
+ always feeling insecure about how people saw him. 
+ He was an overthinker, always worrying about what others might think or say about him. 
+ This made him extremely self-conscious and led him to isolate himself from others, c
+ reating a new persona where he liked to spend his time alone. Jack's life was full of thorns, 
+ and he had accepted that this was his fate. He wished that one day, his <a href="https://youtu.be/zawDTvoXT8k?si=7lrVQqPt5JJr7H9m&t=51">soul</a> of happiness would return to him 
+ and that he could settle down with someone who truly accepted him .</p>
+ <br><br>
+ <p>Just wanna share with you guys with my favourite song</p>
+ <div class = "video-container">
+ <video style ="overflow: hidden; " src = "Here.mp4" controls autoplay width="300" height = "400"></video>
+ </div>
+ 
+ </section>
+
+        <section id="contact">
+			 <h2>Contact Me</h2>
+      <form acttion="/action_page.php"m method= "get">
+		
+			<label for = "fname">Name</label><br>
+			<input type ="text" id ="fname" name = "fname"><br>
+			<label>Email</label><br>
+			<input type="text" name = "Email"><br>
+			<label>Message</label><br>
+			<input type = "text" name = "Message">
+			<input type = "submit" value ="Submit">
+			
+		</form>
+            </section>
+        <section id="social">
+			 <h2>My Socials:</h2>
+        <p>Github:<a href = "https://github.com/faiz03-glicth">faiz03_glicth></a> </p>
+   
+            </section>
+    </main>
+    <div id="right">
+        <h2 style ="text-align: center";> PFP pic </h2>
+			 <div class="image-box">
+				<img src="p3.jpg" alt="Image for Right Sidebar">
+			</div>
+        <ul>
+            <li><a href= "https://youtube.com/playlist?list=PLZO9NnrNSi0mBHVJOObM6PKq7RNMkIQWN&si=-3P6gRn2oYyB55_O">My<span class ="dark"> Go to Workout</span> Playlist</a></li>
+            <li><a href ="https://youtube.com/playlist?list=PLZO9NnrNSi0kOJExdYvxtN7oEpB-ikJUH&si=yfVmnh_fNfadUeAJ">My<span class="dark">Timeline</span> Playlist</a></li>
+            <li><a href ="https://youtube.com/playlist?list=PLZO9NnrNSi0nrC9KM8I82GKKELYHJMiqg&si=prtNOpEzAy-DdG72">My &#x1F480; Playlist</a></li><br>
+         </ul>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Faiz. All rights reserved.</p>
+</footer>
+	<script>
+    var audio = new Audio('Sound.mp3');
+    audio.loop = true;
+    audio.volume = 0.5;
+
+    function playAudio() {
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+</body> </html>
+
